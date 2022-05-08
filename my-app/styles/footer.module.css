@@ -6,21 +6,39 @@
 }
 
 .container {
+    display: table;
     max-width: 1200px;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    
     text-align: center;
 }
 
-.contactMeHeader {
-    color: white;
-    /* background: -webkit-linear-gradient(360deg, rgb(241, 227, 29), rgb(218, 11, 11));
+.contactMeContainer, .supportMeContainer {
+    display: table-cell;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+
+.lfwHeader{
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background: -webkit-linear-gradient(360deg, rgb(241, 227, 29), rgb(218, 11, 11));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
+}
+
+.header {
+    color: white;
+    margin-top: 50px;
 }
 
 .contactMeEmail, .contactMeName, .contactMeMessage {
@@ -29,7 +47,7 @@
     min-width: 100px;
     margin: 5px;
     padding: 10px;
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: #141212;
     border-radius: 3px;
     font-size: 15px;
@@ -39,4 +57,9 @@
 
 .contactMeMessage {
     min-height: 150px;
+}
+
+
+.servicesList {
+    color: white;
 }
